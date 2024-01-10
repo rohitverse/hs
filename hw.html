@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <style>
+       nav ul li{
+            display: inline-block;
+            padding: 20px;
+        }
+       footer nav li{
+            display:block;
+            padding:0 0;
+        }
+    </style>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2980b9;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 1em;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 2em;
+            margin: 2em 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+
+        th, td {
+            padding: 0.8em;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            margin-top: 1em;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #2ecc71;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #27ae60;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5em;
+            color: #555;
+        }
+
+        a {
+            color: #3498db;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+    </style> -->
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Our Hospital</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#our-doctors">Our Doctors</a></li>
+            <li><a href="#patients">For Patients</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#careers">Careers</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Our Hospital, a leading healthcare institution dedicated to providing comprehensive and
+            compassionate medical services.</p>
+        
+        <p>Our commitment to excellence has made us a trusted name in healthcare for over two decades.</p>
+    </section>
+
+    <section id="departments">
+        <h2>Departments</h2>
+        <ul>
+            <li>Cardiology</li>
+            <li>Orthopedics</li>
+            <li>Neurology</li>
+            <li>Obstetrics</li>
+            <li>Internal Medicine</li>
+            <li>Pediatrics</li>
+            <li>Oncology</li>
+            <li>Radiology</li>
+            <li>Dermatology</li>
+            <li>Gastroenterology</li>
+            <li>Urology</li>
+            <li>Ophthalmology</li>
+        </ul>
+        
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <table border="1">
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Emergency Care</td>
+                <td>24/7 emergency medical services with a rapid response team</td>
+            </tr>
+            <tr>
+                <td>Diagnostic Imaging</td>
+                <td>Advanced X-rays, MRIs, and CT scans for accurate diagnosis</td>
+            </tr>
+            <tr>
+                <td>Surgery</td>
+                <td>State-of-the-art surgical procedures performed by skilled surgeons</td>
+            </tr>
+            <tr>
+                <td>Rehabilitation</td>
+                <td>Comprehensive physical and occupational therapy for recovery</td>
+            </tr>
+            <tr>
+                <td>Maternity Care</td>
+                <td>Specialized care for expectant mothers, including prenatal classes</td>
+            </tr>
+            <tr>
+                <td>Pharmacy</td>
+                <td>Convenient in-house pharmacy for prescription medications</td>
+            </tr>
+            <tr>
+                <td>Psychiatry</td>
+                <td>Mental health services and counseling</td>
+            </tr>
+            <tr>
+                <td>Respiratory Therapy</td>
+                <td>Treatment for respiratory conditions and pulmonary rehabilitation</td>
+            </tr>
+        </table>
+        
+    </section>
+
+    <section id="our-doctors">
+        <h2>Our Doctors</h2>
+        <ul>
+            <li>Dr. Aarav Gupta - Cardiologist</li>
+            <li>Dr. Neha Patel - Orthopedic Surgeon</li>
+            <li>Dr. Arjun Sharma - Neurologist</li>
+            <li>Dr. Priya Singh - Obstetrician</li>
+            <li>Dr. Rajesh Kumar - Pediatrician</li>
+        </ul>
+        
+    </section>
+
+    <section id="patients">
+        <h2>For Patients</h2>
+        <p>At Our Hospital, we prioritize patient care and strive to provide a comfortable and supportive
+            environment.</p>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For general inquiries and appointments, please call us at: <a href="tel:+919876543321">+91-9876543321</a></p>
+        <address>
+            Visit us at:<br>
+            C 208 , Sector 74, Phase 8B, Mohali, Punjab, PIN - 160059<br>
+            India
+        </address>
+        <p>Email: <a href="mailto:info@hospital.com">info@hospital.com</a></p>
+        
+    </section>
+
+    <section id="careers">
+        <h2>Careers</h2>
+        <p>Join our team of dedicated healthcare professionals. Check our <a href="#job-openings">current job
+                openings</a> and apply today!</p>
+                
+        
+    </section>
+
+    <section id="job-openings">
+        <h2>Job Openings</h2>
+        <ul>
+            <li>Registered Nurse - Emergency Department 
+                <a href="target.png" download="target.png">Download Full Description</a> 
+            </li>
+            <li>Medical Laboratory Technologist
+                <a href="fruits.pdf" target="_blank" type="application/pdf">View Full Description</a>
+            </li>
+            <li>Front Desk Receptionist</li>
+            <li>Physical Therapist</li>
+            <li>IT Support Specialist</li>
+        </ul>
+        <p>For more details and to apply, please send your resume to <a href="mailto:careers@hospital.com">careers@hospital.com</a>.</p>
+        
+        <!-- <a href="mailto:name@xyz.com?cc=cc@xyz.com&bcc=bcc@xyz.com&subject=Test &body=Demo email" >click to send mail </a> -->
+    </section>
+
+    <footer>
+        <nav>
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quick Links</h4>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#our-doctors">Our Doctors</a></li>
+                <li><a href="#patients">For Patients</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#careers">Careers</a></li>
+            </ul>
+            <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Important Links</h4>
+            <ul>
+                <li><a href="">Terms and Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cancellation and refund</a></li>
+                <li><a href="hospital.html#departments">Shipping and delivery</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Our Hospital. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
