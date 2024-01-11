@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Examples</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Example 1: Basic Text Input -->
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required><br>
+
+<!-- Example 2: Password Input -->
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br>
+
+<!-- Example 3: Email Input with Pattern -->
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address" required><br>
+
+<!-- Example 4: Number Input with Range -->
+<label for="quantity">Quantity:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="100" step="1" required><br>
+
+<!-- Example 5: Date Input -->
+<label for="birthdate">Birthdate:</label>
+<input type="date" id="birthdate" name="birthdate" required><br>
+
+<!-- Example 6: Checkbox -->
+<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+<label for="subscribe">Subscribe to newsletter</label><br>
+
+<!-- Example 7: Radio Buttons -->
+<label>Gender:</label>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Female</label><br>
+
+<!-- Example 8: Textarea -->
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+<!-- Example 9: File Upload -->
+<label for="file">Choose a file:</label>
+<input type="file" id="file" name="file" accept=".pdf, .docx" required><br>
+
+<!-- Example 10: URL Input -->
+<label for="website">Website URL:</label>
+<input type="url" id="website" name="website" placeholder="https://example.com" required><br>
+
+<!-- Example 11: Color Picker -->
+<label for="color">Select a color:</label>
+<input type="color" id="color" name="color" value="#ff0000" required><br>
+
+<!-- Example 12: Search Input -->
+<label for="search">Search:</label>
+<input type="search" id="search" name="search" placeholder="Enter your search query" required><br>
+
+<!-- Example 13: Tel Input (Phone Number) -->
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br>
+
+<!-- Example 14: Disabled Input -->
+<label for="disabledInput">Disabled Input:</label>
+<input type="text" id="disabledInput" name="disabledInput" value="This is disabled" disabled><br>
+
+<!-- Example 15: Read-only Input -->
+<label for="readOnlyInput">Read-only Input:</label>
+<input type="text" id="readOnlyInput" name="readOnlyInput" value="This is read-only" readonly><br>
+
+<!-- Example 16: Hidden Input -->
+<input type="hidden" id="hiddenField" name="hiddenField" value="hidden-value"><br>
+
+<!-- Example 17: Multiple Select (Dropdown) -->
+<label for="colors">Select your favorite colors:</label>
+<select id="colors" name="colors" multiple required>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+</select><br>
+
+<!-- Example 18: Datetime-local Input -->
+<label for="meetingTime">Select meeting date and time:</label>
+<input type="datetime-local" id="meetingTime" name="meetingTime" required><br>
+
+<!-- Example 19: Range Input -->
+<label for="volume">Volume control:</label>
+<input type="range" id="volume" name="volume" min="0" max="100" value="50" step="1"><br>
+
+<!-- Example 20: Month Input -->
+<label for="birthMonth">Select birth month:</label>
+<input type="month" id="birthMonth" name="birthMonth" required><br>
+
+<!-- Example 21: Week Input -->
+<label for="vacationWeek">Select vacation week:</label>
+<input type="week" id="vacationWeek" name="vacationWeek" required><br>
+
+<!-- Example 22: Meter Element -->
+<label for="strength">Password Strength:</label>
+<meter id="strength" name="strength" min="0" max="100" value="50">50%</meter><br>
+
+<!-- Example 23: Progress Element -->
+<label for="fileUpload">File Upload Progress:</label>
+<progress id="fileUpload" name="fileUpload" value="50" max="100">50%</progress><br>
+
+<!-- Example 24: Autocomplete Input -->
+<label for="country">Country:</label>
+<input type="text" id="country" name="country" list="countries" autocomplete="off" required><br>
+<datalist id="countries">
+    <option value="United States">
+    <option value="Canada">
+    <option value="United Kingdom">
+    <!-- Add more options as needed -->
+</datalist><br>
+
+<!-- Example 25: Required Checkbox Group -->
+<fieldset>
+    <legend>Select your preferred payment methods:</legend>
+    <input type="checkbox" id="creditCard" name="paymentMethod" value="creditCard" required>
+    <label for="creditCard">Credit Card</label>
+    
+    <input type="checkbox" id="paypal" name="paymentMethod" value="paypal" required>
+    <label for="paypal">PayPal</label>
+</fieldset><br>
+
+<!-- Continue with the rest of the examples -->
+
+</body>
+</html>
